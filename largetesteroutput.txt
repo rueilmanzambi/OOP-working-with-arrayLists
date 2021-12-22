@@ -1,0 +1,153 @@
+Hello World!!, This is the LARGE Tester
+
+
+ ***************** 
+ *  TEST SET #1  * 
+ ***************** 
+List a  is empty
+[ ]
+Size of a = 0
+
+TEST : Inserting 10 numbers to a
+[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ]
+Size of a = 10
+
+TEST : Inserting elements in the middle
+[ 1, 2, 3, 4, 5, 15, 16, 17, 18, 19, 20, 21, 6, 7, 8, 9, 10, ]
+Size of a = 17
+
+TEST : Acessing individual elements
+a.first() = 1
+a[5] = 15
+a[10] = 20
+a[13] = 7
+
+TEST : Changing elements
+[ 5, 10, 15, 20, 25, 75, 80, 85, 90, 95, 100, 105, 30, 35, 40, 45, 50, ]
+Size of a = 17
+
+
+ ***************** 
+ *  TEST SET #2  * 
+ ***************** 
+ArrayList a
+[ ]
+Size of a = 0
+
+TEST : Inserting 8 elements to a
+[ 0, 8, 16, 24, 32, 40, 48, 56, ]
+Size of a = 8
+
+TEST : Clearing a
+[ ]
+Size of a = 0
+
+TEST : Inserting 10 elements to a
+[ 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, ]
+Size of a = 10
+
+TEST : Removing elements
+[ 0, 5, 15, 20, 25, 30, 35, 40, 45, ]
+[ 0, 5, 15, 20, 30, 35, 40, 45, ]
+[ 0, 5, 15, 20, 30, 35, 45, ]
+Size of a = 7
+
+TEST : Removing last and first elements
+[ 0, 5, 15, 20, 30, 35, 45, ]
+[ 0, 5, 15, 20, 30, 35, ]
+[ 5, 15, 20, 30, 35, ]
+Size of a = 5
+
+TEST : Finding particular elements
+[ 5, 15, 20, 30, 35, ]
+Size of a = 5
+15 is at location 1
+30 is at location 3
+50 is at location -1
+
+TEST : Shrinking the underlaying array
+Size of a = 1000
+Capacity of a = 1024
+deleting 950 elements
+Size of a = 50
+Capacity of a = 128
+so ArrayList is memory efficient :-)
+
+
+ ***************** 
+ *  TEST SET #3  * 
+ ***************** 
+List a is empty
+[ ]
+Size of a = 0
+
+TEST : Inserting 10 elements to a
+[ a, b, c, d, e, f, g, h, i, j, ]
+Size of a = 10
+
+TEST : Operator =
+Before Copy
+a = [ a, b, c, d, e, f, g, h, i, j, ]
+b = [ x, x, x, x, x, x, ]
+After Copy
+a = [ a, b, c, d, e, f, g, h, i, j, ]
+b = [ a, b, c, d, e, f, g, h, i, j, ]
+changing elements of b (making sure its a deep copy)
+a = [ a, b, c, d, e, f, g, h, i, j, ]
+b = [ k, l, m, n, e, f, g, h, i, j, ]
+
+TEST : Copy Constructor
+b = [ k, l, m, n, e, f, g, h, i, j, ]
+c = [ k, l, m, n, e, f, g, h, i, j, ]
+changing elements of c (making sure its a deep copy)
+b = [ k, l, m, n, e, f, g, h, i, j, ]
+c = [ u, v, w, x, e, f, g, h, i, j, ]
+
+
+ ***************** 
+ *  TEST SET #4  * 
+ ***************** 
+
+TEST : Swap (reversing some elements)
+[ a, b, c, d, e, f, g, h, a, b, c, d, e, f, g, h, a, b, c, d, ]
+[ d, c, b, a, h, g, g, h, a, b, c, d, e, f, f, e, d, c, b, a, ]
+
+TEST : Purge
+Before Purge
+a = [ d, c, b, a, h, g, g, h, a, b, c, d, e, f, f, e, d, c, b, a, ]
+After Purge
+a = [ d, c, b, a, h, g, e, f, ]
+
+TEST : Reverse
+Before Reverse
+a = [ d, c, b, a, h, g, e, f, ]
+After Reverse
+a = [ f, e, g, h, a, b, c, d, ]
+
+
+ ***************** 
+ *  TEST SET #5  * 
+ ***************** 
+
+a = [ 0, 3.14, 6.28, 9.42, 12.56, 15.7, 18.84, 21.98, 25.12, 28.26, ]
+b = [ ]
+
+TEST : checking for graceful error handling
+b.first() : 
+!-- ERROR : PANIC in ARRAYLIST!!.first()  (List is empty)
+a[5] = 15.7
+a[50] = !-- ERROR : PANIC in ARRAYLIST!!.[]  (index out of bounds)
+-  1.12104e-44
+a = [ 0, 3.14, 6.28, 9.42, 12.56, 15.7, 18.84, 21.98, 25.12, 28.26, ]
+b = [ ]
+
+TEST : More checking for graceful error handling
+a.insert(9.9, 20) : 
+!-- ERROR : PANIC in ARRAYLIST!!.insert()  (index out of bounds)
+a.remove(555) :
+!-- ERROR : PANIC in ARRAYLIST!!.remove()  (index out of bounds)
+a.swap(1,100) :
+!-- ERROR : PANIC in ARRAYLIST!!.swap()  (index out of bounds)
+a.swap(40,41) :
+!-- ERROR : PANIC in ARRAYLIST!!.swap()  (index out of bounds)
+a = [ 0, 3.14, 6.28, 9.42, 12.56, 15.7, 18.84, 21.98, 25.12, 28.26, ]

@@ -1,0 +1,38 @@
+Hello World!!, This is the Small Tester
+
+Starting Grid
+[ Mario, Koopa, Bowser, Luigi, Toad, DonkeyKong, P.Peach, Yoshi, ]
+After first Lap
+[ Mario, Koopa, Bowser, Luigi, Toad, DonkeyKong, P.Peach, Yoshi, ]
+
+Bowser drops a Banana
+[ Mario, Koopa, Bowser, Toad, Luigi, DonkeyKong, P.Peach, Yoshi, ]
+
+Yoshi takes a Boost Pad
+[ Mario, Koopa, Bowser, Toad, Luigi, DonkeyKong, Yoshi, P.Peach, ]
+
+Luigi uses a red shell
+[ Mario, Koopa, Bowser, Luigi, Toad, DonkeyKong, Yoshi, P.Peach, ]
+
+Toad uses a blue shell
+[ Koopa, Bowser, Luigi, Toad, Mario, DonkeyKong, Yoshi, P.Peach, ]
+
+P.Peach retires with engine failure
+[ Koopa, Bowser, Luigi, Toad, Mario, DonkeyKong, Yoshi, ]
+
+Koopa drops a banana
+[ Koopa, Luigi, Bowser, Toad, Mario, DonkeyKong, Yoshi, ]
+
+DonkeyKong uses a star
+[ DonkeyKong, Luigi, Bowser, Toad, Mario, Koopa, Yoshi, ]
+
+
+**** RACE RESULTS **** 
+Starting Grid:
+[ Mario, Koopa, Bowser, Luigi, Toad, DonkeyKong, P.Peach, Yoshi, ]
+
+Final Standings:
+[ DonkeyKong, Luigi, Bowser, Toad, Mario, Koopa, Yoshi, ]
+
+DNF:
+[ P.Peach, ]
